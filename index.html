@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title class="text">Message decrypter</title>
+  </head>
+  <body>
+    <header>
+      <img class="logo" src="images/logoMD.png" />
+    </header>
+    <main>
+      <div class="leftSide">
+        <textarea id="textAreaUser" placeholder="Please type here your text to encryption."></textarea>
+        <p class="textLeftSide">⚠ No uppercase or special characters allowed</p>
+        <button type="button" id="encrypt">Encrypt it!</button>
+        <button type="button" id="decrypt">Decrypt it!</button>
+      </div>
+      <div class="rightSide">
+        <div class="displayArea">
+          <div class="rightSideNoMessage">
+            <div class="animate"></div>
+            <h1 class="textRightSide">No message found</h1>
+            <p class="textRightSide">Please type a text you want to encrypt!</p>
+          </div>
+
+          <div class="rightSideShowMessage">
+            <p class="textAreaRightSide" id="outputMessage"></p>
+            <button type="button" class="btnRightSide" id="copy">Copy text!</button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <ul class="redesSociais">
+        <li>
+          <a href="https://www.linkedin.com/in/louisegastardi/" target="_blank" rel="noopener noreferrer"
+            ><img class="imgNetwork" src="images/icon_LinkedIn.png"
+          /></a>
+        </li>
+        <li>
+          <a href="https://github.com/louGastardi" target="_blank" rel="noopener noreferrer"
+            ><img class="imgNetwork" src="images/icon_gitHub.png"
+          /></a>
+        </li>
+        <li>
+          <a href="https://lougastardi.github.io/Curriculum/" target="_blank" rel="noopener noreferrer"
+            ><img class="imgNetwork" src="images/icon_LouGastardi.png"
+          /></a>
+        </li>
+      </ul>
+      <p class="footer">Lou Gastardi<br />© 2022</p>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.6.4/lottie_svg.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
